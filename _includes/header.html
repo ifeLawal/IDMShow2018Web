@@ -1,0 +1,10 @@
+<header id="header">
+<div class="show">
+  IDM Showcase
+</div>
+  <nav>
+    {% for item in site.data.settings.menu %}
+      <a href="{{ item.url }}">{{ item.name }}</a>
+    {% endfor %}
+  </nav>
+</header>
